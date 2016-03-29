@@ -1,17 +1,24 @@
+const assert = require('chai').assert;
 
-var assert = require('chai').assert;
-
-var MyClass = require('../src/MyClass');
+let MyClass = require('../src/MyClass');
 
 describe('MyClass', function() {
 
-    it('doubles a number', function() {
-        assert.equal(MyModule.double(2), 4);
+    before(function(done) {
+        this.salt = 2837465
+        this.myClass = new MyClass(this.salt)
+        done()
+    })
+
+    it('returns a number when calling .get()', function() {
+        assert.equal(typeof this.myClass.get(), 'number');
     });
 
-    it('doubles lots of numbers', function() {
-        for (var i = 0; i < 1000; i++) {
-            assert.equal(MyModule.double(i), i * 2);
-        }
-    })
+    it('throws an exception calling .getPrivate()', function() {
+        let self = this
+        assert.throws(function() {
+            self.myClass.getPrivate()
+        })
+    });
+
 })

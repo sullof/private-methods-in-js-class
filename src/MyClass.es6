@@ -1,6 +1,7 @@
 'use strict'
 
-// this is a stupid example, but it works to explain the approach
+// this is a pretty dumb example,
+// but it works to explain the approach
 
 // unexported class for private methods
 class _MyClass {
