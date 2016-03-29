@@ -15,7 +15,7 @@ class _MyClass {
         this.secret = 0.1847563
     }
 
-    getPrivate() {
+    getRand() {
 
         // assign the public instance to a local variable
         let this_ = this.instance
@@ -44,7 +44,7 @@ class MyClass {
 
     get() {
         // returns the output of a private method
-        return _this.getPrivate()
+        return _this.getRand()
     }
 }
 
