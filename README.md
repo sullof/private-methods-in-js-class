@@ -1,6 +1,7 @@
 # Private methods in Javascript class
 
-There are tons of discussion about how to better handle private methods in classes. I think that EcmaScript should allow some good way to do this, but for now anyone tries to found a good-enough approach. This is mine.
+There are tons of discussion about how to better handle private methods in classes. 
+This approach tries to keep things easy without loosing the advantage of having actual properties for the class.
 
 Take a look at the simple example in [`src/MyClass.es6`](src/MyClass.es6).
 
