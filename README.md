@@ -18,3 +18,4 @@ or, if you prefer, compile the ES6 code to ES5 and run the test on the js files 
 ```
 npm run build && npm run test
 ```
+
